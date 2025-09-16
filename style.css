@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-attachment: fixed;
+}
+
+/* Additional gradient overlay for depth */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      ellipse at top,
+      rgba(0, 201, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at bottom,
+      rgba(79, 209, 197, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Service Card Styles */
+.service-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #112240 0%, #0f1b2e 50%, #112240 100%);
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+  z-index: 1;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 201, 255, 0.05) 0%,
+    rgba(79, 209, 197, 0.1) 25%,
+    rgba(0, 201, 255, 0.05) 50%,
+    rgba(79, 209, 197, 0.1) 75%,
+    rgba(0, 201, 255, 0.05) 100%
+  );
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.service-card:hover::before {
+  left: 100%;
+}
+
+.service-card:hover::after {
+  opacity: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 201, 255, 0.15) 0%,
+    rgba(79, 209, 197, 0.2) 25%,
+    rgba(0, 201, 255, 0.15) 50%,
+    rgba(79, 209, 197, 0.2) 75%,
+    rgba(0, 201, 255, 0.15) 100%
+  );
+}
+
+.service-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(0, 201, 255, 0.25),
+    0 0 0 1px rgba(0, 201, 255, 0.1), 0 0 30px rgba(0, 201, 255, 0.15);
+  border-color: rgba(0, 201, 255, 0.3);
+  background: linear-gradient(
+    135deg,
+    #1a2d4a 0%,
+    #0f1b2e 25%,
+    #1a2d4a 50%,
+    #0f1b2e 75%,
+    #1a2d4a 100%
+  );
+}
+
+.service-card .service-content {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-content {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  transition: all 0.4s ease;
+  filter: brightness(0.9) saturate(0.8);
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1) saturate(1.2);
+}
+
+.service-card h3 {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.service-card:hover h3 {
+  color: #4fd1c5;
+  transform: translateX(5px);
+}
+
+.service-card p {
+  transition: all 0.3s ease;
+}
+
+.service-card:hover p {
+  color: #e2e8f0;
+  transform: translateX(5px);
+}
+
+.service-card button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.service-card button:hover::before {
+  left: 100%;
+}
+
+.service-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 201, 255, 0.3);
+}
+
+/* Additional background animation effects */
+.service-card {
+  background-size: 200% 200%;
+  animation: backgroundShift 8s ease-in-out infinite;
+}
+
+.service-card:hover {
+  animation: backgroundPulse 2s ease-in-out infinite;
+}
+
+@keyframes backgroundShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes backgroundPulse {
+  0%,
+  100% {
+    background-position: 0% 50%;
+    transform: translateY(-15px) scale(1.02);
+  }
+  50% {
+    background-position: 100% 50%;
+    transform: translateY(-18px) scale(1.025);
+  }
+}
+
+/* Vanta Background */
+#vanta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Modern Navigation Styles */
+#mainNav {
+  background: transparent;
+  backdrop-filter: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#navBackground {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#mainNav.scrolled {
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation text visibility on transparent background */
+#mainNav .nav-item-modern {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+#mainNav .nav-item-modern:hover {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Logo visibility on transparent background */
+#mainNav img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Contact button visibility on transparent background */
+#mainNav .contact-button {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile menu button visibility */
+#mainNav #mobile-menu-button {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Modern nav item animations */
+.nav-item-modern {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item-modern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+  z-index: 1;
+}
+
+.nav-item-modern:hover::before {
+  left: 100%;
+}
+
+/* Mobile menu animations */
+.animate-slideInDown {
+  animation: slideInDown 0.5s ease-out forwards;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Hamburger menu animation */
+.hamburger-line {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Logo glow effect */
+.logo-glow {
+  filter: drop-shadow(0 0 10px rgba(0, 201, 255, 0.3));
+}
+
+/* Contact button glow */
+.contact-glow {
+  box-shadow: 0 0 20px rgba(0, 201, 255, 0.3);
+}
+
+/* Mobile menu backdrop */
+.mobile-menu-backdrop {
+  background: linear-gradient(
+    135deg,
+    rgba(10, 25, 47, 0.98) 0%,
+    rgba(17, 34, 64, 0.98) 50%,
+    rgba(15, 27, 46, 0.98) 100%
+  );
+  backdrop-filter: blur(20px);
+}
+
+/* Smooth transitions for all nav elements */
+.nav-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Active nav item indicator */
+.nav-item-modern.active {
+  color: #4fd1c5;
+  background: rgba(0, 201, 255, 0.1);
+}
+
+.nav-item-modern.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #00c9ff, #4fd1c5);
+}
+
+/* Partner Slider Styles */
+.partner-slider {
+  animation: slide 30s linear infinite;
+  display: flex;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-slider {
+    animation-duration: 40s;
+  }
+  .partner-slider img {
+    height: 12vw;
+    min-height: 50px;
+    margin: 0 3vw;
+  }
+  .partner-slider > div {
+    min-width: 200vw;
+  }
+}

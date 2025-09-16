@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INNOGLE - Pioneering Deep-Tech Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-gradient-to-br from-[#0a192f] via-[#112240] to-[#0f1b2e] text-white min-h-screen">
+    <!-- Modern Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-500 ease-in-out" id="mainNav">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-cyan-500/0 to-teal-500/0 backdrop-blur-none border-b border-transparent transition-all duration-500" id="navBackground"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo with Modern Animation -->
+          <div class="flex-shrink-0 flex items-center group">
+            <div class="relative">
+              <img src="https://huggingface.co/spaces/ArvindRK/innogle/resolve/main/images/innogle-txt-logo1.png" alt="INNOGLE Logo" class="h-12 transition-all duration-300 group-hover:scale-110 group-hover:brightness-110">
+              <div class="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-teal-400/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+
+          <!-- Desktop Navigation with Modern Styling -->
+          <div class="hidden lg:flex items-center space-x-1">
+            <a href="#" class="nav-item-modern group relative px-4 py-2 text-white/90 font-medium hover:text-white transition-all duration-300 rounded-lg">
+              <span class="relative z-10">Home</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+            </a>
+            <a href="#about" class="nav-item-modern group relative px-4 py-2 text-white/90 font-medium hover:text-white transition-all duration-300 rounded-lg">
+              <span class="relative z-10">About</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+            </a>
+            <a href="#services" class="nav-item-modern group relative px-4 py-2 text-white/90 font-medium hover:text-white transition-all duration-300 rounded-lg">
+              <span class="relative z-10">Services</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+            </a>
+            <a href="#products" class="nav-item-modern group relative px-4 py-2 text-white/90 font-medium hover:text-white transition-all duration-300 rounded-lg">
+              <span class="relative z-10">Products</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+            </a>
+            <a href="#awards" class="nav-item-modern group relative px-4 py-2 text-white/90 font-medium hover:text-white transition-all duration-300 rounded-lg">
+              <span class="relative z-10">Awards</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></div>
+            </a>
+            <a href="#contact" class="ml-6">
+              <div class="px-8 py-3 bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-all">
+              Contact Us
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Mobile Menu Button with Modern Animation -->
+          <div class="lg:hidden flex items-center">
+            <button id="mobile-menu-button" class="relative p-2 text-white/90 hover:text-white focus:outline-none group">
+              <div class="w-8 h-8 flex flex-col justify-center items-center space-y-1">
+                <span class="block w-6 h-0.5 bg-current transition-all duration-300 group-hover:bg-cyan-400"></span>
+                <span class="block w-6 h-0.5 bg-current transition-all duration-300 group-hover:bg-cyan-400"></span>
+                <span class="block w-6 h-0.5 bg-current transition-all duration-300 group-hover:bg-cyan-400"></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden absolute top-full left-0 w-full bg-gradient-to-b from-[#0a192f]/98 via-[#112240]/98 to-[#0f1b2e]/98 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+        <div class="px-4 py-6 space-y-2">
+          <a href="#" class="block px-4 py-3 text-white/90 font-medium hover:text-white hover:bg-gradient-to-r hover:from-cyan-500/10 hover:to-teal-500/10 rounded-lg transition-all duration-300 group">
+            <span class="flex items-center">
+              <i data-feather="home" class="w-5 h-5 mr-3 group-hover:text-cyan-400 transition-colors duration-300"></i>
+              Home
+            </span>
+          </a>
+          <a href="#about" class="block px-4 py-3 text-white/90 font-medium hover:text-white hover:bg-gradient-to-r hover:from-cyan-500/10 hover:to-teal-500/10 rounded-lg transition-all duration-300 group">
+            <span class="flex items-center">
+              <i data-feather="info" class="w-5 h-5 mr-3 group-hover:text-cyan-400 transition-colors duration-300"></i>
+              About
+            </span>
+          </a>
+          <a href="#services" class="block px-4 py-3 text-white/90 font-medium hover:text-white hover:bg-gradient-to-r hover:from-cyan-500/10 hover:to-teal-500/10 rounded-lg transition-all duration-300 group">
+            <span class="flex items-center">
+              <i data-feather="settings" class="w-5 h-5 mr-3 group-hover:text-cyan-400 transition-colors duration-300"></i>
+              Services
+            </span>
+          </a>
+          <a href="#products" class="block px-4 py-3 text-white/90 font-medium hover:text-white hover:bg-gradient-to-r hover:from-cyan-500/10 hover:to-teal-500/10 rounded-lg transition-all duration-300 group">
+            <span class="flex items-center">
+              <i data-feather="package" class="w-5 h-5 mr-3 group-hover:text-cyan-400 transition-colors duration-300"></i>
+              Products
+            </span>
+          </a>
+          <a href="#awards" class="block px-4 py-3 text-white/90 font-medium hover:text-white hover:bg-gradient-to-r hover:from-cyan-500/10 hover:to-teal-500/10 rounded-lg transition-all duration-300 group">
+            <span class="flex items-center">
+              <i data-feather="award" class="w-5 h-5 mr-3 group-hover:text-cyan-400 transition-colors duration-300"></i>
+              Awards
+            </span>
+          </a>
+          <div class="pt-4">
+            <a href="#contact" class="block px-4 py-3 text-center bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-semibold rounded-lg hover:from-cyan-400 hover:to-teal-400 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <span class="flex items-center justify-center">
+                <i data-feather="mail" class="w-5 h-5 mr-2"></i>
+            Contact Us
+              </span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center overflow-hidden">
+      <!-- Background Video -->
+      <video autoplay muted loop playsinline id="hero-video" class="absolute top-0 left-0 w-full h-full object-cover opacity-80">
+        <source src="images\Futuristic_Deep_Ocean_Animation (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Hero Content -->
+      <div class="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6" data-aos="fade-up">
+          We Amplify the Voice of
+          <span class="gradient-text">Ocean Technology</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+          Innovative Marine Technologies Powered by AI & Robotics
+        </p>
+        <button class="bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold py-3 px-8 rounded-full hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          Explore Solutions
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-[#112240] via-[#0f1b2e] to-[#0a192f] border-t border-[#172a45]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Main About Content -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="flex items-center justify-center text-4xl md:text-5xl font-bold mb-6 space-x-3">
+            <span>About</span>
+            <img src="images/innogle-txt-logo1.png" 
+                alt="About Innogle Logo" 
+                class="h-12 md:h-14 w-auto">
+          </h2>
+          <p class="text-gray-300 text-lg leading-relaxed max-w-4xl mx-auto">
+            INNOGLE offers cutting-edge solutions tailored for ocean workers, ocean security, and ocean research. Our innovative technologies enhance profitable fishing, ensure the safety of ocean workers, and advance ocean data mining and processing. We specialize in AI, Robotics, and IoUT-powered systems for search and rescue operations and other oceanic applications.
+          </p>
+        </div>
+
+        <!-- Video and Key Offerings Row -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+          <div data-aos="fade-right" class="flex justify-center lg:justify-start">
+            <div class="relative">
+              <!-- Blue Glow Effect -->
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-cyan-500/30 rounded-xl blur-xl scale-110 -z-10"></div>
+              
+              <!-- Video -->
+              <video 
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                class="rounded-xl shadow-2xl w-full relative z-10"
+                style="height: 350px; object-fit: cover;"
+              >
+                <source src="images\innogle_about_us_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          
+          <div data-aos="fade-left" class="lg:pl-4">
+            <h3 class="text-2xl font-bold mb-6 gradient-text">Key Offerings</h3>
+            <div class="space-y-6">
+              <div class="flex items-start group" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <i data-feather="database" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-300 transition-colors duration-300">Ocean Data Mining</h4>
+                  <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">Harness the power of AI to process and analyze ocean data efficiently.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start group" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <i data-feather="search" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-300 transition-colors duration-300">Search and Rescue Technology</h4>
+                  <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">State-of-the-art technology for quick and effective search and rescue missions.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start group" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <i data-feather="anchor" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-300 transition-colors duration-300">Profitable Fishing</h4>
+                  <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">Boost your fishing operations with data-driven tools and AI-enhanced strategies.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start group" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <i data-feather="shield" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-300 transition-colors duration-300">Ocean Worker Safety</h4>
+                  <p class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300">Ensure life safety with our advanced robotic and IoUT solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technology Focus Areas -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-bold text-center mb-8 gradient-text" data-aos="fade-up">Technology Focus</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-br from-[#112240] to-[#0f1b2e] p-6 rounded-lg border border-[#172a45] hover:border-cyan-400 transition-all duration-300 group text-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <i data-feather="zap" class="w-8 h-8 text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors duration-300">HYDRO AI</h4>
+              <p class="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Advanced AI for ocean data processing and analysis</p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-[#112240] to-[#0f1b2e] p-6 rounded-lg border border-[#172a45] hover:border-cyan-400 transition-all duration-300 group text-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <i data-feather="layers" class="w-8 h-8 text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors duration-300">DATA MINING</h4>
+              <p class="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Intelligent ocean data extraction and processing</p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-[#112240] to-[#0f1b2e] p-6 rounded-lg border border-[#172a45] hover:border-cyan-400 transition-all duration-300 group text-center" data-aos="fade-up" data-aos-delay="300">
+              <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <i data-feather="droplet" class="w-8 h-8 text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors duration-300">AQUACULTURE</h4>
+              <p class="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Smart aquaculture and marine farming solutions</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Technologies -->
+        <div class="text-center">
+          <h3 class="text-2xl font-bold mb-8 gradient-text" data-aos="fade-up">Core Technologies</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div class="flex flex-col items-center group" data-aos="fade-up" data-aos-delay="100">
+              <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <i data-feather="cpu" class="w-8 h-8 text-white"></i>
+              </div>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 font-medium">AI & Machine Learning</span>
+            </div>
+            <div class="flex flex-col items-center group" data-aos="fade-up" data-aos-delay="200">
+              <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <i data-feather="wifi" class="w-8 h-8 text-white"></i>
+              </div>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 font-medium">IoT Sensors</span>
+            </div>
+            <div class="flex flex-col items-center group" data-aos="fade-up" data-aos-delay="300">
+              <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <i data-feather="code" class="w-8 h-8 text-white"></i>
+              </div>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 font-medium">Robotics</span>
+            </div>
+            <div class="flex flex-col items-center group" data-aos="fade-up" data-aos-delay="400">
+              <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <i data-feather="cloud" class="w-8 h-8 text-white"></i>
+              </div>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 font-medium">Cloud Computing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+    <section class="relative py-20 overflow-hidden">
+      <!-- Video Background -->
+      <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        class="absolute inset-0 w-full h-full object-cover opacity-100"
+      >
+        <source src="images/Futuristic_Underwater_Animation_Generated.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-[#0a192f]/75 via-[#112240]/75 to-[#0f1b2e]/75"></div>
+      
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+            Our <span class="gradient-text">Solutions</span>
+          </h2>
+          <p
+            class="text-gray-400 max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Cutting-edge technologies designed for marine environments and water
+            resource management
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="service-card bg-[#112240] p-6 rounded-lg transition-all duration-300 hover:border-teal-500 border border-transparent shadow-[0_0_10px_4px_rgba(59,130,246,0.5)]"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="service-content">
+              <div class="mb-4">
+                <img src="images\products images\hydroai.jpg" alt="HydroAI" class="w-full h-32 object-cover rounded-lg mb-3">
+            </div>
+              <h3 class="text-lg font-bold mb-2">
+                <span class="gradient-text animate-gradient">HYDRO AI</span>
+              </h3>
+              <p class="text-gray-400 mb-4 text-sm">
+              Advanced AI platform for real-time water quality monitoring and
+              predictive analytics in marine ecosystems.
+            </p>
+              <button class="w-full bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:bg-transparent hover:text-cyan-400 hover:border-cyan-400 hover:border-gradient-to-r hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 ease-in-out text-sm">
+              Explore
+            </button>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="service-card bg-[#112240] p-6 rounded-lg transition-all duration-300 hover:border-teal-500 border border-transparent shadow-[0_0_10px_4px_rgba(59,130,246,0.5)]"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="service-content">
+              <div class="mb-4">
+                <img src="images\products images\sagarone.jpg" alt="Sagar One" class="w-full h-32 object-cover rounded-lg mb-3">
+            </div>
+              <h3 class="text-lg font-bold mb-2">
+                <span class="gradient-text animate-gradient">OCEAN DRONE</span>
+              </h3>
+              <p class="text-gray-400 mb-4 text-sm">
+              Autonomous marine drones equipped with multispectral sensors for
+              deep-sea exploration and mapping.
+            </p>
+              <button class="w-full bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:bg-transparent hover:text-cyan-400 hover:border-cyan-400 hover:border-gradient-to-r hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 ease-in-out text-sm">
+              Explore
+            </button>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div
+            class="service-card bg-[#112240] p-6 rounded-lg transition-all duration-300 hover:border-teal-500 border border-transparent shadow-[0_0_10px_4px_rgba(59,130,246,0.5)]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="service-content">
+              <div class="mb-4">
+                <img src="images\products images\innoglelifesafetywatch.jpg" alt="Life Safety Watch" class="w-full h-32 object-cover rounded-lg mb-3">
+            </div>
+              <h3 class="text-lg font-bold mb-2">
+                <span class="gradient-text animate-gradient">LIFE SAFETY WATCH</span>
+              </h3>
+              <p class="text-gray-400 mb-4 text-sm">
+              AI-powered wearable devices for maritime workers with emergency
+              alerts and environmental hazard detection.
+            </p>
+              <button class="w-full bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:bg-transparent hover:text-cyan-400 hover:border-cyan-400 hover:border-gradient-to-r hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 ease-in-out text-sm">
+              Explore
+            </button>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div
+            class="service-card bg-[#112240] p-6 rounded-lg transition-all duration-300 hover:border-teal-500 border border-transparent shadow-[0_0_10px_4px_rgba(59,130,246,0.5)]"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="service-content">
+              <div class="mb-4">
+                <img src="images\products images\Kadalcompass.jpg" alt="Kadal Compass" class="w-full h-32 object-cover rounded-lg mb-3">
+            </div>
+              <h3 class="text-lg font-bold mb-2">
+                <span class="gradient-text animate-gradient">KADALCOMPASS</span>
+              </h3>
+              <p class="text-gray-400 mb-4 text-sm">
+              Next-gen navigation system integrating satellite data with ocean
+              current patterns for optimal routing .
+            </p>
+              <button class="w-full bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:bg-transparent hover:text-cyan-400 hover:border-cyan-400 hover:border-gradient-to-r hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 ease-in-out text-sm">
+              Explore
+            </button>
+            </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div
+            class="service-card bg-[#112240] p-6 rounded-lg transition-all duration-300 hover:border-teal-500 border border-transparent shadow-[0_0_10px_4px_rgba(59,130,246,0.5)]"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="service-content">
+              <div class="mb-4">
+                <img src="images\products images\sarrof.jpg" alt="Search & Rescue Solution" class="w-full h-32 object-cover rounded-lg mb-3">
+            </div>
+              <h3 class="text-lg font-bold mb-2">
+                <span class="gradient-text animate-gradient">SEARCH AND RESCUE SOLUTION</span>
+              </h3>
+              <p class="text-gray-400 mb-4 text-sm">
+              Autonomous ocean-floating vessels designed for Search and Rescue (SAR) operations represent advancement in maritime safety and rescue efforts 
+            </p>
+              <button class="w-full bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:bg-transparent hover:text-cyan-400 hover:border-cyan-400 hover:border-gradient-to-r hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 ease-in-out text-sm">
+              Explore
+            </button>
+            </div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div
+            class="service-card bg-[#112240] p-6 rounded-lg transition-all duration-300 hover:border-teal-500 border border-transparent shadow-[0_0_10px_4px_rgba(59,130,246,0.5)]"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="service-content">
+              <div class="mb-4">
+                <img src="images\products images\innogleunderwaterdevice.jpg" alt="Underwater Device" class="w-full h-32 object-cover rounded-lg mb-3">
+            </div>
+              <h3 class="text-lg font-bold mb-2">
+                <span class="gradient-text animate-gradient">UNDER WATER DEVICE</span>
+              </h3>
+              <p class="text-gray-400 mb-4 text-sm">
+              Our IoUT Underwater Device with Hydro AI enables real-time monitoring and AI-driven analysis for ocean and aquaculture.
+            </p>
+              <button class="w-full bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:bg-transparent hover:text-cyan-400 hover:border-cyan-400 hover:border-gradient-to-r hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 ease-in-out text-sm">
+              Explore
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-20 bg-gradient-to-br from-[#112240] via-[#0f1b2e] to-[#0a192f] border-t border-[#172a45] overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+            Our <span class="gradient-text">Partners</span>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            Collaborating with industry leaders and research institutions worldwide
+          </p>
+        </div>
+
+        <div class="relative w-full overflow-hidden">
+          <div class="partner-slider flex items-center py-4" style="animation-play-state: running;">
+            <!-- First set of logos -->
+            <div class="flex shrink-0 items-center justify-around min-w-full">
+              <img src="images/members supported by/digitalgroup.png" alt="Digital Group" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/download1.png" alt="Partner" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/telangana-govt-logo.png" alt="Telangana Government" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/NITI_Aayog_logo.png" alt="NITI Aayog" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/ngis.png" alt="NGIS" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/image6.png" alt="Partner" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/tie.png" alt="TIE" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/voice.png" alt="VOICE" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/wep.jpg" alt="WEP" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+            </div>
+            <!-- Duplicate set for seamless looping -->
+            <div class="flex shrink-0 items-center justify-around min-w-full">
+              <img src="images/members supported by/digitalgroup.png" alt="Digital Group" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/download1.png" alt="Partner" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/telangana-govt-logo.png" alt="Telangana Government" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/NITI_Aayog_logo.png" alt="NITI Aayog" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/ngis.png" alt="NGIS" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/image6.png" alt="Partner" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/tie.png" alt="TIE" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/voice.png" alt="VOICE" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+              <img src="images/members supported by/wep.jpg" alt="WEP" class="h-20 mx-8 opacity-70 hover:opacity-100 transition-opacity">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Products Section -->
+    <section id="products">
+    <section class="relative py-20 overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img 
+          src="images\website_content\Gemini_Generated_Image_e5077te5077te507.png" 
+          alt="INNOGLE Technology Background" 
+          class="w-full h-full object-cover opacity-100"
+            />
+          </div>
+      
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-br from-[#0f1b2e]/90 via-[#0a192f]/90 to-[#112240]/90"></div>
+      
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Our <span class="gradient-text">Impact</span>
+            </h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            Transforming ocean technology through innovation and excellence
+          </p>
+              </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Stat Card 1 -->
+          <div class="group relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="bg-gradient-to-br from-[#112240]/80 to-[#0f1b2e]/80 backdrop-blur-sm p-6 rounded-xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-cyan-500/20">
+              <div class="text-center">
+                <div class="relative mb-4">
+                  <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                    <i data-feather="cpu" class="w-8 h-8 text-white"></i>
+              </div>
+                  <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
+              </div>
+                <div class="text-3xl font-bold gradient-text mb-2 counter" data-target="780">0</div>
+                <p class="text-gray-300 font-medium mb-1 text-sm">IP & Products</p>
+                <p class="text-gray-500 text-xs">Intellectual Properties</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Card 2 -->
+          <div class="group relative" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-gradient-to-br from-[#112240]/80 to-[#0f1b2e]/80 backdrop-blur-sm p-6 rounded-xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-cyan-500/20">
+              <div class="text-center">
+                <div class="relative mb-4">
+                  <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                    <i data-feather="users" class="w-8 h-8 text-white"></i>
+        </div>
+                  <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
+      </div>
+                <div class="text-3xl font-bold gradient-text mb-2 counter" data-target="1150">0</div>
+                <p class="text-gray-300 font-medium mb-1 text-sm">Happy Customers</p>
+                <p class="text-gray-500 text-xs">Global Reach</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Card 3 -->
+          <div class="group relative" data-aos="fade-up" data-aos-delay="300">
+            <div class="bg-gradient-to-br from-[#112240]/80 to-[#0f1b2e]/80 backdrop-blur-sm p-6 rounded-xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-cyan-500/20">
+              <div class="text-center">
+                <div class="relative mb-4">
+                  <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                    <i data-feather="shield" class="w-8 h-8 text-white"></i>
+          </div>
+                  <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
+          </div>
+                <div class="text-3xl font-bold gradient-text mb-2 counter" data-target="490">0</div>
+                <p class="text-gray-300 font-medium mb-1 text-sm">Secured Systems</p>
+                <p class="text-gray-500 text-xs">Marine Security</p>
+          </div>
+          </div>
+          </div>
+
+          <!-- Stat Card 4 -->
+          <div class="group relative" data-aos="fade-up" data-aos-delay="400">
+            <div class="bg-gradient-to-br from-[#112240]/80 to-[#0f1b2e]/80 backdrop-blur-sm p-6 rounded-xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-cyan-500/20">
+              <div class="text-center">
+                <div class="relative mb-4">
+                  <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                    <i data-feather="zap" class="w-8 h-8 text-white"></i>
+                  </div>
+                  <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
+                </div>
+                <div class="text-3xl font-bold gradient-text mb-2 counter" data-target="578">0</div>
+                <p class="text-gray-300 font-medium mb-1 text-sm">Deployments</p>
+                <p class="text-gray-500 text-xs">Active Installations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+    <section class="py-20 bg-gradient-to-br from-[#0a192f] via-[#112240] to-[#0f1b2e]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+            Awards & <span class="gradient-text">Recognition</span>
+          </h2>
+          <p
+            class="text-gray-400 max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Innogle is proud to be recognized for its excellence in technology and innovation.
+            Our groundbreaking 5G use case has been honored as the best in its field, 
+            demonstrating our leadership in leveraging cutting-edge technology for transformative solutions.
+          </p>
+        </div>
+
+        <!-- Modern Awards Slider -->
+        <div class="relative" data-aos="fade-up" data-aos-delay="200">
+          <div class="awards-slider-container overflow-hidden rounded-2xl shadow-2xl">
+            <div class="awards-slider flex transition-transform duration-1000 ease-in-out" id="awardsSlider">
+              <!-- Award Image 1 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/NasscomPrisidentDebjani.jpg" 
+                  alt="NASSCOM President Award" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">NASSCOM President Award</h3>
+                    <p class="text-sm text-gray-300">Technology Innovation Recognition</p>
+              </div>
+            </div>
+              </div>
+
+              <!-- Award Image 2 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/MeityNasscomAwardPhoto.jpg" 
+                  alt="MEITY NASSCOM Award" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">MEITY NASSCOM Award</h3>
+                    <p class="text-sm text-gray-300">Digital Innovation Excellence</p>
+                  </div>
+            </div>
+          </div>
+
+              <!-- Award Image 3 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/20230517_133458.jpg" 
+                  alt="Technology Innovation Award" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">Technology Innovation Award</h3>
+                    <p class="text-sm text-gray-300">Marine Technology Excellence</p>
+            </div>
+                </div>
+              </div>
+
+              <!-- Award Image 4 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/MinistorAnithaandshobana.png" 
+                  alt="Minister Recognition" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">Minister Recognition</h3>
+                    <p class="text-sm text-gray-300">Government Technology Partnership</p>
+            </div>
+                </div>
+              </div>
+
+              <!-- Award Image 5 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/Ministerandshobanaatiit.png" 
+                  alt="IIT Technology Award" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">IIT Technology Award</h3>
+                    <p class="text-sm text-gray-300">Academic Excellence Recognition</p>
+            </div>
+                </div>
+              </div>
+
+              <!-- Award Image 6 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/IMG_6583.jpeg" 
+                  alt="Innovation Excellence Award" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">Innovation Excellence Award</h3>
+                    <p class="text-sm text-gray-300">Deep Tech Innovation</p>
+            </div>
+          </div>
+        </div>
+
+              <!-- Award Image 7 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/tamilministerthangarajh.jpeg" 
+                  alt="Tamil Nadu Minister Award" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">Tamil Nadu Minister Award</h3>
+                    <p class="text-sm text-gray-300">State Technology Leadership</p>
+      </div>
+                </div>
+              </div>
+
+              <!-- Award Image 8 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/IMCaward.jpg" 
+                  alt="IMC Award" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">IMC Award</h3>
+                    <p class="text-sm text-gray-300">Industry Excellence Recognition</p>
+                  </div>
+                </div>
+        </div>
+
+              <!-- Award Image 9 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/20220919_145054.jpg" 
+                  alt="Technology Leadership Award" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">Technology Leadership Award</h3>
+                    <p class="text-sm text-gray-300">Ocean Technology Innovation</p>
+            </div>
+            </div>
+          </div>
+
+              <!-- Award Image 10 -->
+              <div class="award-slide flex-shrink-0 w-full h-96 relative group">
+                <img 
+                  src="images/awards_image/IMG_6441.jpeg" 
+                  alt="Innovation Summit Award" 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 text-white">
+                    <h3 class="text-xl font-bold">Innovation Summit Award</h3>
+                    <p class="text-sm text-gray-300">Marine Technology Excellence</p>
+        </div>
+      </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button 
+            id="prevAward" 
+            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 z-10"
+          >
+            <i data-feather="chevron-left" class="w-6 h-6"></i>
+          </button>
+          <button 
+            id="nextAward" 
+            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 z-10"
+          >
+            <i data-feather="chevron-right" class="w-6 h-6"></i>
+          </button>
+
+          <!-- Dots Indicator -->
+          <div class="flex justify-center mt-6 space-x-2" id="awardDots">
+            <!-- Dots will be generated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative py-20 overflow-hidden">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 bg-gradient-to-br from-[#0f1b2e] via-[#0a192f] to-[#112240]"></div>
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%2300c9ff" fill-opacity="0.03"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
+      
+      <!-- Glow Effects -->
+      <div class="absolute inset-0 overflow-hidden">
+        <!-- Top Left Glow -->
+        <div class="absolute -top-20 -left-20 w-80 h-80 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <!-- Top Right Glow -->
+        <div class="absolute -top-10 -right-10 w-96 h-96 bg-gradient-to-l from-blue-500/15 to-cyan-500/15 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        <!-- Bottom Left Glow -->
+        <div class="absolute -bottom-20 left-1/4 w-72 h-72 bg-gradient-to-r from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        <!-- Bottom Right Glow -->
+        <div class="absolute -bottom-10 -right-20 w-64 h-64 bg-gradient-to-l from-cyan-500/15 to-blue-500/15 rounded-full blur-3xl animate-pulse" style="animation-delay: 3s;"></div>
+      </div>
+      
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Get In <span class="gradient-text">Touch</span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            Ready to revolutionize your ocean technology? Let's discuss how our innovative solutions can transform your marine operations and drive sustainable growth.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <!-- Contact Info -->
+          <div data-aos="fade-right" class="space-y-8">
+            <!-- Contact Cards -->
+            <div class="space-y-4">
+              <!-- Email Card -->
+              <div class="group relative">
+                <div class="bg-gradient-to-br from-[#112240]/80 to-[#0f1b2e]/80 backdrop-blur-sm p-4 rounded-xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-cyan-500/20">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i data-feather="mail" class="w-6 h-6 text-white"></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h3 class="text-lg font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors duration-300">Email Us</h3>
+                      <p class="text-gray-300 mb-1 text-sm">Drop us a line anytime</p>
+                      <a href="mailto:contact@innogle.com" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 font-medium text-sm">contact@innogle.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="group relative">
+                <div class="bg-gradient-to-br from-[#112240]/80 to-[#0f1b2e]/80 backdrop-blur-sm p-4 rounded-xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-cyan-500/20">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i data-feather="phone" class="w-6 h-6 text-white"></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h3 class="text-lg font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors duration-300">Call Us</h3>
+                      <p class="text-gray-300 mb-1 text-sm">Speak with our experts</p>
+                      <a href="tel:+6512345678" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 font-medium text-sm">+91 9941909070</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location Card -->
+              <div class="group relative">
+                <a href="https://www.google.com/maps/place/Innogle/@13.0415094,80.2589716,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5267fde3f40387:0x1623af4942357a53!8m2!3d13.0415094!4d80.2589716!16s%2Fg%2F11f7sqf2k9?entry=ttu&g_ep=EgoyMDI1MDkxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="block">
+                  <div class="bg-gradient-to-br from-[#112240]/80 to-[#0f1b2e]/80 backdrop-blur-sm p-4 rounded-xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-cyan-500/20 cursor-pointer">
+                    <div class="flex items-start">
+                      <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <i data-feather="map-pin" class="w-6 h-6 text-white"></i>
+                        </div>
+                      </div>
+                      <div class="ml-4">
+                        <h3 class="text-lg font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors duration-300">Visit Us</h3>
+                        <p class="text-gray-300 mb-1 text-sm">Our innovation hub</p>
+                        <p class="text-cyan-400 font-medium text-sm group-hover:text-cyan-300 transition-colors duration-300">42, 81, TT Krishnamachari Rd, CIT Colony<br>Alwarpet, Chennai, Tamil Nadu 600018</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="bg-gradient-to-br from-[#112240]/60 to-[#0f1b2e]/60 backdrop-blur-sm p-4 rounded-xl border border-cyan-500/10">
+              <h4 class="text-base font-bold text-white mb-3 gradient-text">Why Choose INNOGLE?</h4>
+              <ul class="space-y-2">
+                <li class="flex items-center text-gray-300 text-sm">
+                  <i data-feather="check-circle" class="w-4 h-4 text-cyan-400 mr-2"></i>
+                  <span>Cutting-edge AI & Robotics solutions</span>
+                </li>
+                <li class="flex items-center text-gray-300 text-sm">
+                  <i data-feather="check-circle" class="w-4 h-4 text-cyan-400 mr-2"></i>
+                  <span>24/7 technical support</span>
+                </li>
+                <li class="flex items-center text-gray-300 text-sm">
+                  <i data-feather="check-circle" class="w-4 h-4 text-cyan-400 mr-2"></i>
+                  <span>Customized marine technology solutions</span>
+                </li>
+                <li class="flex items-center text-gray-300 text-sm">
+                  <i data-feather="check-circle" class="w-4 h-4 text-cyan-400 mr-2"></i>
+                  <span>Proven track record in ocean technology</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div data-aos="fade-left">
+            <div class="relative">
+              <!-- Form Glow Effect -->
+              <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-teal-500/20 rounded-3xl blur-xl scale-105 -z-10"></div>
+              
+              <!-- Form Container -->
+              <form class="bg-gradient-to-br from-[#0a192f]/90 to-[#112240]/90 backdrop-blur-xl p-6 rounded-2xl border border-cyan-500/20 shadow-2xl">
+                <div class="mb-6">
+                  <h3 class="text-xl font-bold text-white mb-2">Send us a Message</h3>
+                  <p class="text-gray-400 text-sm">We'll get back to you within 24 hours</p>
+                </div>
+
+                <div class="mb-4 group">
+                  <label for="fullName" class="block text-sm font-medium text-gray-300 mb-2 group-focus-within:text-cyan-400 transition-colors duration-300">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    class="w-full px-4 py-3 bg-[#112240]/50 border border-[#172a45] rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 text-white placeholder-gray-500 transition-all duration-300 focus:bg-[#112240]/80"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+
+                <div class="mb-4 group">
+                  <label for="email" class="block text-sm font-medium text-gray-300 mb-2 group-focus-within:text-cyan-400 transition-colors duration-300">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 bg-[#112240]/50 border border-[#172a45] rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 text-white placeholder-gray-500 transition-all duration-300 focus:bg-[#112240]/80"
+                    placeholder="your.email@company.com"
+                  />
+                </div>
+
+                <div class="mb-4 group">
+                  <label for="subject" class="block text-sm font-medium text-gray-300 mb-2 group-focus-within:text-cyan-400 transition-colors duration-300">
+                    Subject
+                  </label>
+                  <select
+                    id="subject"
+                    class="w-full px-4 py-3 bg-[#112240]/50 border border-[#172a45] rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 text-white transition-all duration-300 focus:bg-[#112240]/80"
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="product">Product Information</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="support">Technical Support</option>
+                    <option value="demo">Request Demo</option>
+                  </select>
+                </div>
+
+                <div class="mb-6 group">
+                  <label for="message" class="block text-sm font-medium text-gray-300 mb-2 group-focus-within:text-cyan-400 transition-colors duration-300">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    rows="3"
+                    class="w-full px-4 py-3 bg-[#112240]/50 border border-[#172a45] rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 text-white placeholder-gray-500 transition-all duration-300 focus:bg-[#112240]/80 resize-none"
+                    placeholder="Tell us about your project or requirements..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-bold py-3 px-6 rounded-lg hover:from-cyan-400 hover:to-teal-400 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/25 relative overflow-hidden group"
+                >
+                  <span class="relative z-10 flex items-center justify-center">
+                    <i data-feather="send" class="w-4 h-4 mr-2"></i>
+                    Send Message
+                  </span>
+                  <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-teal-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-[#0a192f] via-[#112240] to-[#0f1b2e] border-t border-[#172a45] py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold gradient-text mb-4">INNOGLE</h3>
+            <p class="text-gray-400">
+              Pioneering deep-tech solutions for ocean technology and water
+              resource management.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-white font-medium mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-teal-300 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-teal-300 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-teal-300 transition-colors"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-teal-300 transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-white font-medium mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-teal-300 transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-teal-300 transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-teal-300 transition-colors"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-white font-medium mb-4">Connect With Us</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-[#112240] rounded-full flex items-center justify-center hover:bg-teal-500/10 transition-colors"
+              >
+                <i
+                  data-feather="twitter"
+                  class="w-5 h-5 text-gray-400 hover:text-teal-300"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-[#112240] rounded-full flex items-center justify-center hover:bg-teal-500/10 transition-colors"
+              >
+                <i
+                  data-feather="linkedin"
+                  class="w-5 h-5 text-gray-400 hover:text-teal-300"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-[#112240] rounded-full flex items-center justify-center hover:bg-teal-500/10 transition-colors"
+              >
+                <i
+                  data-feather="facebook"
+                  class="w-5 h-5 text-gray-400 hover:text-teal-300"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-[#112240] rounded-full flex items-center justify-center hover:bg-teal-500/10 transition-colors"
+              >
+                <i
+                  data-feather="youtube"
+                  class="w-5 h-5 text-gray-400 hover:text-teal-300"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-[#172a45] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-500 text-sm mb-4 md:mb-0">
+            © 2023 INNOGLE Technologies. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-500 hover:text-teal-300 text-sm transition-colors"
+              >Sitemap</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-teal-300 text-sm transition-colors"
+              >Accessibility</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-teal-300 text-sm transition-colors"
+              >Careers</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 transform hover:scale-110 hover:shadow-xl">
+      <i data-feather="arrow-up" class="w-6 h-6"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
